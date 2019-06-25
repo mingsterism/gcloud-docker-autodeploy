@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello world\n');
 });
 app.get('/name', (req, res) => {
-  res.send('my name is name\n');
+  res.send('my name is name blablabla\n');
 });
 
 app.listen(PORT, HOST);

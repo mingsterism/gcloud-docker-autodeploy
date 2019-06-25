@@ -1,0 +1,8 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/my-mini-microservice/node-web-app", "."]
+    timeout: 500s
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/my-mini-microservice/node-web-app"]
+tags: ["web-app-test"]
+images: ["gcr.io/my-mini-microservice/node-web-app"]
